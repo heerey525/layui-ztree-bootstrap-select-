@@ -1,0 +1,341 @@
+.list1{
+    height: 40px;
+    width: 30%;
+    float: left;
+}
+div.list2{
+    width: 400px;
+    display:block;
+    margin:0 auto;
+}
+.title2{
+    float: left;
+    clear: none;
+    width: 20%;
+    margin-top: 10px;
+}
+.title .select1{
+    width: 120px;
+    height: 25px;
+}
+.bootstrap-select > .dropdown-toggle.bs-placeholder{
+    width: 120px;
+    height: 25px;
+}
+button .btn .dropdown-toggle .btn-default{
+    width: 120px;
+    height: 25px;
+}
+@media (min-width: 768px) {
+    .form-inline .control-label {
+        margin-bottom: 0;
+        vertical-align: middle;
+        width: 100px;
+    }
+}
+img{
+    position: absolute;
+    right: 25px;
+    width: 21px;
+    height: 21px;
+}
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 100% !important;
+}
+.bootstrap-select > .dropdown-toggle.bs-placeholder{
+    width: 100%;
+    height: 100%;
+    line-height: 20px;
+}
+#menuContent ul{
+    border-top:0;
+    /*position: absolute;*/
+    /*padding: 5px 0;*/
+    z-index: 20;
+    min-width: 170px;
+    /*border: 1px solid #d2d2d2;*/
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #fff;
+    /*border-radius: 2px;*/
+    /*box-shadow: 0 2px 4px rgba(0,0,0,.12);*/
+    /*box-sizing: border-box;*/
+}
+.btn-group .open > .dropdown-toggle.btn-default {
+    color: #333;
+    background-color: #fff  !important;
+    border-color: #e6e6e6;
+}
+.open > .dropdown-toggle.btn-default:hover{
+    color: #333;
+    background-color: #fff  !important;
+    border-color: #e6e6e6;
+}
+.btn-default:hover {
+    color: #333;
+    background-color: #fff  !important;
+    border-color: #e6e6e6;
+}
+ .open > .dropdown-toggle.btn-default:focus{
+     color: #333;
+     background-color: #fff;
+     border-color: #c9c9c9;
+}
+.layui-input-block .bootstrap-select > .dropdown-toggle {
+    height: 38px;
+    line-height: 1.3;
+    line-height: 38px\9;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.ztree li span.button{
+    width:0;
+}
+.layui-form-item .btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #e6e6e6;
+    outline: none;
+}
+.layui-form-item .btn-default:active:hover{
+    color: #333;
+    background-color: #fff;
+    border-color: #d2d2d2!important;
+}
+.btn-default:active{
+    border-color: #d2d2d2!important;
+}
+.btn-default:focus{
+    border-color: #d2d2d2!important;
+}
+.open > .dropdown-toggle.btn-default:hover{
+    color: #333;
+    background-color: #fff!important;
+
+}
+.layui-form-item .bootstrap-select .dropdown-toggle:focus {
+    outline: 0!important;
+}
+ul.ztree{
+    border: 1px solid #d2d2d2;
+}
+#citySel{
+    padding:0 30px 0 10px;
+}
+.btn-group .dropdown-menu > .active > a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #5FB878;
+    outline: 0;
+}
+.bootstrap-select.btn-group .dropdown-menu li a span.text {
+    line-height: 36px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+.dropdown-menu{
+    position: absolute;
+    left: 0;
+    top: 42px;
+    padding: 5px 0;
+    z-index: 999;
+    min-width: 100%;
+    border: 1px solid #d2d2d2;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.12);
+    box-sizing: border-box;
+}
+.layui-input-block .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #5FB878;
+    outline: 0;
+}
+.ztree li a.curSelectedNode {
+    padding-top: 0;
+    background-color: #5FB878;
+    color: #fff;
+    height: 16px;
+    border: 1px #5FB878 solid;
+    opacity: 0.8;
+}
+.ztree li {
+    font-size: 14px!important;
+    white-space: nowrap;
+    outline: 0;
+    left: 0;
+    top: 42px;
+    padding: 9px 0;
+    z-index: 999;
+    min-width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #fff;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+.ztree * {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: Verdana, Arial, Helvetica, AppleGothic, sans-serif;
+}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+    color: #fff;
+    text-decoration: none;
+     background-color: #5FB878!important;
+    outline: 0;
+}
+.btn-default:hover{
+    border-color: #d2d2d2 !important;
+}
+.bootstrap-select > .dropdown-toggle{
+    width: 100% !important;
+}
+.open > .dropdown-toggle.btn-default {
+    background-color: #fff!important;
+}
+.open > .dropdown-toggle.btn-default:hover{
+    border-color:#c9c9c9;
+}
+.bootstrap-select > .dropdown-toggle.bs-placeholder{
+    color:#333!important;
+}
+.layui-input-add {
+    outline: none;
+    list-style: none;
+    margin-left: 0;
+}
+
+.layui-form-item-add {
+    float: left;
+    clear: none;
+    width: 20%;
+    margin-top: 10px;
+}
+
+.layui-form-label-add {
+    width: 30%;
+    padding: 10px 0;
+    text-align: left;
+    float: left;
+    min-width: 70px;
+}
+
+.layui-input-block-add {
+    width: 50%;
+    padding: 0;
+    float: left;
+    margin-left: 0;
+}
+
+.layui-form-item .layui-input-inline-add {
+    float: left;
+    width: 30%;
+}
+.layui-form-add {
+    width: 100%;
+    min-height: 130px;
+    border: 1px solid #ccc;
+}
+
+.layui-btn-add {
+    margin-left: 0;
+    float: left;
+    margin-top: 10px;
+}
+
+.layui-section .layui-btn-group .layui-btn-add-1 {
+    float: left;
+    margin: 5px 8px!important;
+}
+
+.layui-section {
+    margin-top: 5px;
+    width: 100%;
+    min-height: 50px;
+    border: 1px solid #ccc;
+}
+
+.layui-title-add {
+    border-width: 0;
+}
+
+.add .layui-form-select {
+    display: none;
+}
+.layui-form-select dl{
+    top:23px;
+}
+.layui-form-select dl dd, .layui-form-select dl dt{
+    line-height: 16px;
+}
+.level0 {
+    width: auto;
+}
+
+#key {
+    width: 100%;
+    min-width: 124px;
+    background: #fff;
+    z-index: 999 !important;
+}
+
+#treeDemo {
+    margin-top: 0;
+    width: auto;
+    min-width: 140px;
+    height: 300px;
+}
+.bs-searchbox-add{
+    width: 100%;
+    min-width: 140px;
+    border:1px solid #ccc;
+    border-bottom: 0;
+    background: #fff;
+    padding: 4px 8px;
+}
+.layui-form-item-title{
+    text-align: left;
+    font-weight: 600;
+    line-height: 38px;
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-top:5px;
+}
+.layui-form-item-text{
+    text-align: center;
+    line-height: 38px;
+    background: #009688;
+    font-size: 18px;
+    margin-bottom: 0;
+    color:#fff;
+}
+table{
+    text-align: center;
+}
+.layui-table th {
+    text-align: center;
+}
+.layui-btn{
+    float: left;
+    margin-top:10px;
+}
+.layui-table thead tr{
+    background: #fff;
+}
+.layui-table tbody tr:hover{
+    background: #fff;
+}
+.layui-table{
+    margin:0;
+}
+.layui-bg-green{
+    margin-top:5px;
+}

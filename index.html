@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>营业管理-上班数据</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/demo.css" type="text/css">
+    <link rel="stylesheet" href="css/zTreeStyle/zTreeStyle.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-select.css">
+    <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
+    <style>
+        .layui-form-item-title{
+            text-align: left;
+            font-weight: 600;
+            line-height: 38px;
+            font-size: 18px;
+            margin-bottom: 0;
+            margin-top:5px;
+        }
+        .layui-form-item-text{
+            text-align: center;
+            line-height: 38px;
+            background: #009688;
+            font-size: 18px;
+            margin-bottom: 0;
+            color:#fff;
+        }
+        table{
+            text-align: center;
+        }
+        .layui-table th {
+            text-align: center;
+        }
+        .layui-btn{
+            float: left;
+            margin-top:10px;
+        }
+        .layui-table thead tr{
+            background: #fff;
+        }
+        .layui-table tbody tr:hover{
+            background: #fff;
+        }
+        .layui-table{
+            margin:0;
+        }
+        .layui-bg-green{
+            margin-top:5px;
+        }
+        .layui-form-add{
+            min-height: 90px;
+            border:0;
+        }
+    </style>
+</head>
+<body>
+<div class="layui-form-item layui-form-item-title">
+    <span>xx统计</span>
+</div>
+
+<form class="layui-form layui-form-add" action="" lay-filter="">
+
+    <div class="layui-form-item layui-form-item-add" style="position:relative;">
+        <label class="layui-form-label layui-form-label-add">xx区域：</label>
+        <input id="citySel" type="text" readonly value="区域选择"
+               class="layui-input-block layui-input-block-add add layui-input layui-unselect" lay-filter="areas" onclick="showMenu();"/>
+        <div id="menuContent" class="menuContent"
+             style="display:none; position: absolute;top:40px;z-index: 1000;">
+            <div class="bs-searchbox-add"><input type="text" id="key" value="" class="empty form-control" autocomplete="off"/></div>
+            <ul id="treeDemo" class="ztree">
+            </ul>
+        </div>
+    </div>
+
+    <div class="layui-form-item layui-form-item-add">
+        <label class="layui-form-label layui-form-label-add">xx名称：</label>
+        <div class="layui-input-block layui-input-block-add add">
+            <select id="lunchBegins" class="selectpicker select1 layui-input-block layui-input-block-add"
+                    data-live-search="true" data-live-search-style="begins" title="全部" lay-filter="name">
+                <!--<option>1</option>-->
+                <!--<option>2</option>-->
+            </select>
+        </div>
+    </div>
+</form>
+
+
+<!--<script src="layui/layui.js" charset="utf-8"></script>-->
+
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<!--ztree树形-->
+<script type="text/javascript" src="js/jquery.ztree.core.js"></script>
+<script type="text/javascript" src="js/jquery.ztree.excheck.js"></script>
+<script type="text/javascript" src="js/jquery.ztree.exhide.js"></script>
+<!--xx名称下拉搜索-->
+<script src="js/bootstrap.js" defer></script>
+<script src="js/bootstrap-select.js" defer></script>
+<!--xx区域假数据-->
+<script src="js/ceshi.js"></script>
+<script src="layui/layui.js" charset="utf-8"></script>
+<!--数据处理-->
+<script src="js/liandong.js"></script>
+<!--xx名称假数据-->
+<script src="js/demo.js"></script>
+<!--区域搜索-->
+<script src="js/fuzzysearch.js"></script>
+
+
+<!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+<script>
+    var options = "";
+    $.each(aaA, function (i, v) {
+        options += "<option>" + v.barName + "</option>";
+    });
+    $("#lunchBegins").html(options);
+    $("#citySel").click(function () {
+        $("#treeDemo").show();
+        $(".bs-searchbox-add").show()
+    });
+
+
+    layui.use('form', function(){
+        var form = layui.form;
+
+    });
+</script>
+
+</body>
+</html>
