@@ -3,6 +3,6 @@
 
 展示：
 
-https://hanlei525.github.io/layui-ztree-bootstrap-select-/
+https://heerey525.github.io/layui-ztree-bootstrap-select-/
 
 ![QQ图片20180728164441](https://github.com/hanlei525/layui-ztree-bootstrap-select-/blob/master/1.png)
